@@ -34,7 +34,7 @@ See `configs/example.yml` for knobs.
 
 ## Method highlights
 - **DP on a weighted DAG**: $F(v)=\max_{u\in pred(v)}[F(u)+w(u,v)]$ and backtrack for $\pi^*.$  
-- **Top-k** via edge-masking/Yen-style variants to enumerate plausible alternatives under biological ordering.
+- **Top-k** via edge-masking variants to enumerate plausible alternatives under biological ordering.
 - **Integrated weight** $w = \alpha w_\text{wiki} + \beta w_\text{toxcast} + \gamma w_\text{lit},$ $\alpha+\beta+\gamma=1.$
 
 ## Neo4j (optional)
