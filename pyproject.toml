@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aopdp"
+version = "0.1.0"
+description = "DP-based AOP pathway recommendation"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Hosik Choi", email = "choi.hosik@uos.ac.kr"}]
+license = {file = "LICENSE"}
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "networkx>=3.2",
+    "pyyaml>=6.0",
+    "tqdm>=4.66",
+    "neo4j>=5.18",
+    "scikit-learn>=1.4",
+]
+
+[project.scripts]
+aopdp = "aopdp.cli:main"
