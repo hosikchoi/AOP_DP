@@ -1,0 +1,5 @@
+event_id,type,name
+MIE_AR_binding,MIE,AR binding
+KE_AR_transcription,KE,AR transcriptional activation
+KE_Cell_prolif,KE,Cell proliferation
+AO_Estrous_cycle,AO,Altered estrous cycle

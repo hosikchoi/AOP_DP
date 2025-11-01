@@ -1,0 +1,4 @@
+src_event_id,dst_event_id,wwiki,wtoxcast,wlit
+MIE_AR_binding,KE_AR_transcription,1.0,0.6,0.5
+KE_AR_transcription,KE_Cell_prolif,0.8,0.4,0.5
+KE_Cell_prolif,AO_Estrous_cycle,0.7,0.3,0.4
