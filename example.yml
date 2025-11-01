@@ -1,0 +1,30 @@
+run:
+  mie: MIE_AR_binding
+  ao: AO_Estrous_cycle
+  top_k: 5
+  alpha: 0.5     # wiki
+  beta: 0.3      # toxcast
+  gamma: 0.2     # lit
+  min_edge_w: 0.0
+  max_hops: 6
+
+input:
+  loader: csv    # csv | neo4j
+  data_dir: data
+
+neo4j:
+  uri: bolt://localhost:7687
+  user: neo4j
+  password: password
+  database: neo4j
+  # nodes: (Event {event_id, type in ['MIE','KE','AO'], name})
+  # rel:   (Event)-[:KER {wwiki,wtoxcast,wlit, sign:+1/-1}]->(Event)
+
+output:
+  dir: outputs
+
+semantics:
+  enabled: false
+  # When enabled, `w_sem` is computed via embeddings and added as gamma2
+  gamma2: 0.0
+  model: sentence-transformers/all-MiniLM-L6-v2
